@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+    <title>Document</title>
+</head>
+<body>  
+  <header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+      <div class="container-fluid p-2">
+        <a class="navbar-brand ps-5" href="index.html"><img src="/img/logokırmızı.png" width="110px" style="margin: 0px;" alt=""></a>
+        <a class="navbar-brand" href="index.html"><img src="/img/arem.png" width="100px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse pe-5" id="navbarNav">
+          <ul class="navbar-nav ms-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link active" id="1" aria-current="page" onClick="add(this.id)" href="index.html">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="2" href="hizmetlerimiz.html" onClick="add(this.id)">Hizmetlerimiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="3" href="hakkimizda.html" onClick="add(this.id)">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="4"  href="contact.html" onClick="add(this.id)" >Bize Ulaşın</a>
+            </li>            
+          </ul>
+          
+          <div class="social-links d-flex align-items-center">
+            <li class="social-link"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="social-link"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="social-link"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <div onmouseover="show()" onmouseout="not()">
+              <li class="social-link"><a href=""><i class="fa-brands fa-at"></i></a></li>
+              <p data-aos="flip-right" class="email d-none" >info@aremyazilim.com</p>
+            </div>                                   
+          </div>
+        </div>
+
+        <div>
+
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation Bar -->
+
+
+    <!-- Background and Content Area -->
+    <div class="background_img">
+
+      <!-- Dropdown Area -->
+      <div class="d-none" id="services">
+        <div class="services-item">        
+          <div class="logo">
+            <img src="/img/app-development.png" alt="" width="150px">
+          </div>
+          <div class="table">
+            <table>
+              <tr>
+                <th>Web Tasarım</th>
+                <th class="px-5">Diğer Hizmetler</th>                
+              </tr>
+              <tr>
+                <td class="pt-3"><a href=""><img src="/img/html.png" width="30px" alt=""> Kurumsal Web Site</a> </td>                
+                <td class="px-5 pt-3"><a href=""><img src="/img/seo.png" width="30px" alt=""> S.E.O</a></td>
+                
+              </tr>
+              <tr>
+                <td class="py-2"><a href=""><img src="/img/html (1).png" width="30px" alt=""> Web Site Yazılım</a></td>
+                <td class="px-5 py-2"><a href=""><img src="/img/domain.png" width="30px" alt=""> Domain ve Hosting</a></td>
+              </tr>
+              <tr>
+                <td><a href=""><img src="/img/front-end.png" width="30px" alt=""> Arayüz Tasarımı</a></td>
+                <td class="px-5"><a href=""><img src="/img/email.png" width="30px" alt=""> Kurumsal Mail</a></td>
+              </tr>
+              
+            </table>
+            
+          </div>
+        </div> 
+      </div>
+      <!-- Dropdown Area -->
+
+      <div class="d-flex align-items-center">  
+        <div class="background_content ps-4">              
+        <h2 data-aos="fade-left" 
+        data-aos-delay="500"               
+        data-aos-duration="1000">Online </h2>
+        
+        <h2 data-aos="fade-left"
+        data-aos-delay="800"        
+        data-aos-duration="1500">
+         Varlığınızı </h2>
+        
+        <h2 data-aos="fade-left"  
+        data-aos-delay="1100"      
+        data-aos-duration="2000">
+         Güçlendirin : </h2>
+        
+        <h2 data-aos="fade-left"  
+        data-aos-delay="1400"      
+        data-aos-duration="2500">
+         Kurumsal </h2>
+        
+        <h2 data-aos="fade-left"  
+        data-aos-delay="1700"      
+        data-aos-duration="3000">
+         Web Sitesinizi </h2>
+        
+        <h2 data-aos="fade-left"  
+        data-aos-delay="2000"             
+        data-aos-duration="3000">
+         Yaptırın!</h2>
+
+        <div data-aos="fade-left"  
+        data-aos-delay="2500" class="text-white ps-2 mt-3">
+          <h5>2.500 TL'den Başlayan Fiyatlarla</h5>
+        </div>  
+        <div data-aos="fade-left"  
+        data-aos-delay="3000">
+          <button class="btn getPrice">Fiyat Teklifi Al</button>
+        </div> 
+        </div>
+        <div class="background_gif">
+          <img src="/img/pngwing.com.png" width="400px" alt="">
+        </div>             
+      </div>
+
+    </div>
+    <!-- Background and Content Area -->
+
+  </header>    
+  
+
+  <main class="mt-3 container-fluid position-relative">
+    <div class="title">      
+      <h1>İnternet Dünyasında Yükselin: Tüm Cihazlara Uygun Responsive Tasarım ve SEO Uyumlu  Web Siteniz ile Dijital Varlığınızı Arttırın </h1>
+    </div> 
+
+    <div>
+      <div class="d-flex align-items-center justify-content-evenly mt-3">     
+        <div class="card" style="width: 18rem;">
+          <button class="btn btn-success btn-sm">SEO Hediyeli</button>
+          <a href=""><img src="/img/html.png" class="card-img-top p-3" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title"><strong>Kurumsal Web Sitesi</strong></h5>
+            <p class="card-text">Anahtar Teslim Web Sitenizi Bize Yaptırın Kurumsal Mail Adresi İle Şirketinizi Daha Çok Müşteriye Ulaştırın</p>   
+            <a href="" class="btn btn-outline-danger">Daha Fazla...</a>       
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <a href=""><img src="/img/seo2.png" class="card-img-top p-3" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title"><strong>S.E.O Arama Motoru Optimizayonu</strong></h5>
+            <p class="card-text">Arama Motoru Optimizasyonu İle Web Sitenizi Herzaman Üst Sıralarda Tutun</p> 
+            <a href="" class="btn btn-outline-danger ">Daha Fazla...</a>          
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <a href=""><img src="/img/web-analytics.png" class="card-img-top p-3" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title"><strong>Google Ads</strong></h5>
+          <p class="card-text">Detaylı Analizler ve Doğru Anahtar Kelimeler Tercihleri İle Verilen Google Reklamları Sonucunda Google'da En Üst Sırada Olun</p> 
+          <a href="" class="btn btn-outline-danger">Daha Fazla...</a>        
+        </div>
+      </div>
+      </div>
+
+      <div class="d-flex align-items-center justify-content-evenly mt-3">     
+        <div class="card" style="width: 18rem;">          
+          <a href=""><img src="/img/email.png" class="card-img-top p-3" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title"><strong>Kurumsal Mail Adresi</strong></h5>
+            <p class="card-text">Kurumsal mail, işletmenizin ismini ve alan adını içerir. Bu, işletmenizin müşteriler ve iş ortakları ile iletişim kurarken daha profesyonel bir görünüm sergilemesini sağlar.</p>   
+            <a href="" class="btn btn-outline-danger">Daha Fazla...</a>       
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <a href=""><img src="/img/www.png" class="card-img-top p-3" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title"><strong>Domain Almak</strong></h5>
+            <p class="card-text">Domain, bir web sitesinin adresini belirleyen, internette benzersiz bir kimlik numarasıdır. Örneğin, Google'ın alan adı "google.com" dur.</p> 
+            <a href="" class="btn btn-outline-danger ">Daha Fazla...</a>          
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <a href=""><img src="/img/startup.png" class="card-img-top p-3" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title"><strong>Hosting Almak</strong></h5>
+          <p class="card-text">Hosting, bir web sitesinin internet üzerinde yayınlanması için gerekli olan hizmetleri sağlayan bir hizmettir.</p> 
+          <a href="" class="btn btn-outline-danger">Daha Fazla...</a>        
+        </div>
+      </div>
+      </div>      
+    </div>    
+  </main>
+  <button class="up border-0 fs-1 d-none"><i class="fa-solid fa-circle-arrow-up fa-bounce"></i></button>
+
+
+
+  <footer>
+
+  </footer>
+
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script src="/js/app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
