@@ -1,0 +1,91 @@
+@media screen and (max-width: 1150px) {
+    .nav-link{        
+        margin-right: 5px !important;   
+        letter-spacing: 1px !important;           
+    }
+    .social-links li{        
+        padding-left: 10px !important;    
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #services{
+        display: none !important;
+    }
+    .social-links{        
+        display: none !important;    
+    }
+    .background_content {
+        width: 100% !important;
+    }
+    .background_content h2 {
+        font-size: 25px !important;
+    }
+    #navbarNav{
+        width: 50% !important;
+        margin: auto !important;
+        text-align: center;
+    }
+    .nav-link{       
+        letter-spacing: 1.5px !important;           
+    }
+    .title h1{
+        font-size: 20px !important;
+    }
+    .footer a{        
+        font-size: 15px !important;        
+    }
+    .footer{
+        padding: 20px 10px !important;
+    }
+    .footer-phone i{
+        font-size: 20px;       
+    }
+}
+
+@media screen and (max-width:768px) {
+    .title h1{
+        font-size: 20px !important;
+    }
+    .card{
+        height: 350px !important;
+        width: 200px !important;  
+        padding-left: 3px !important;              
+        padding-right: 3px !important;
+    } 
+    .card-body{
+        padding: 3px !important;
+        
+    }   
+    .card p{
+        height: 155px !important;        
+    }    
+    .card img{
+        width: 100px !important;           
+    }   
+}
+
+@media screen and (max-width:464px) {
+    .title h1{
+        font-size: 14px !important;
+    }
+    .card{
+        height: 200px !important;
+        width: 150px !important;  
+        padding-left: 3px !important;              
+        padding-right: 3px !important;
+    } 
+    .card-body{
+        padding: 0px !important;
+        
+    }   
+    .card p{
+        height: 30px !important; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;             
+    }    
+    .card img{
+        width: 80px !important;           
+    }   
+}

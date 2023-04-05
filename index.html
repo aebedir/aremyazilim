@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="/css/media.css"> 
+    <link rel="stylesheet" href="/css/section.css"> 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/footer.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,16 +21,16 @@
   <header>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
 
       <div class="container-fluid p-2">
-        <a class="navbar-brand ps-5" href="index.html"><img src="/img/logokırmızı.png" width="110px" style="margin: 0px;" alt="aremyazılım"></a>
-        <a class="navbar-brand" href="index.html"><img src="/img/arem.png" width="100px" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand ps-md-5" href="index.html"><img src="/img/logokırmızı.png" width="110px" style="margin: 0px;" alt="aremyazılım"></a>
+        <a class="navbar-brand d-none d-lg-block" href="index.html"><img src="/img/arem.png" width="100px" alt=""></a>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse pe-5" id="navbarNav">
+        <div class="collapse navbar-collapse pe-lg-5" id="navbarNav">
           <ul class="navbar-nav ms-lg-auto">
             <li class="nav-item">
               <a class="nav-link active" id="1" aria-current="page" onClick="add(this.id)" href="index.html">Anasayfa</a>
@@ -44,7 +46,7 @@
             </li>            
           </ul>
           
-          <div class="social-links d-flex align-items-center">
+          <div class="social-links">
             <li class="social-link"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
             <li class="social-link"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
             <li class="social-link"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
@@ -67,7 +69,7 @@
     <div class="background_img">
 
       <!-- Dropdown Area -->
-      <div class="d-none" id="services">
+      <div class="d-none " id="services">
         <div class="services-item">        
           <div class="logo">
             <img src="/img/app-development.png" alt="Web Tasarım" width="150px">
@@ -139,7 +141,7 @@
           <button class="btn getPrice">Fiyat Teklifi Al</button>
         </div> 
         </div>
-        <div class="background_gif">
+        <div class="background_gif d-none d-lg-block">
           <img src="/img/pngwing.com.png" width="400px" alt="">
         </div>             
       </div>
@@ -150,75 +152,82 @@
   </header>    
   
 
-  <main class="mt-3 container-fluid position-relative">
+  <main class="mt-3 container position-relative">
     <div class="title">      
       <h1>İnternet Dünyasında Yükselin: Tüm Cihazlara Uygun Responsive Tasarım ve SEO Uyumlu  Web Siteniz ile Dijital Varlığınızı Arttırın </h1>
     </div> 
 
-    <div>
-      <div class="d-flex align-items-center justify-content-evenly mt-3">     
-        <div class="card" style="width: 18rem;">
-          <button class="btn btn-success btn-sm">SEO Hediyeli</button>
-          <a href=""><img src="/img/html.png" class="card-img-top p-3" alt="Kurumsal Web Sitesi"></a>
-          <div class="card-body">
-            <h5 class="card-title"><strong>Kurumsal Web Sitesi</strong></h5>
-            <p class="card-text">Anahtar Teslim Web Sitenizi Bize Yaptırın Kurumsal Mail Adresi İle Şirketinizi Daha Çok Müşteriye Ulaştırın</p>   
-            <a href="" class="btn btn-outline-danger">Daha Fazla...</a>       
-          </div>
+    <div class="container mt-3 "> 
+      <div class="row gap-4 d-flex justify-content-evenly">
+        <div class="card col-md-6 col-lg-4" data-aos="fade-up"
+        data-aos-duration="500" style="width: 18rem;">
+            <button class="btn btn-success btn-sm">SEO Hediyeli</button>
+            <a href=""><img src="/img/html.png" class="card-img-top p-3" alt="Kurumsal Web Sitesi"></a>
+            <div class="card-body">
+              <h5 class="card-title"><strong>Kurumsal Web Sitesi</strong></h5>
+              <p class="card-text">Anahtar Teslim Web Sitenizi Bize Yaptırın Kurumsal Web Adresi İle Şirketinizi Daha Çok Müşteriye Ulaştırın</p>   
+              <a href="" class="btn btn-outline-danger">Daha Fazla...</a>       
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <a href=""><img src="/img/seo2.png" class="card-img-top p-3" alt="S.E.O Arama Motoru Optimizayonu"></a>
-          <div class="card-body">
-            <h5 class="card-title"><strong>S.E.O Arama Motoru Optimizayonu</strong></h5>
-            <p class="card-text">Arama Motoru Optimizasyonu İle Web Sitenizi Herzaman Üst Sıralarda Tutun</p> 
-            <a href="" class="btn btn-outline-danger ">Daha Fazla...</a>          
-          </div>
+        <div class="card col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000"style="width: 18rem;">
+            <a href=""><img src="/img/seo2.png" class="card-img-top p-3" alt="S.E.O Arama Motoru Optimizayonu"></a>
+            <div class="card-body">
+              <h5 class="card-title"><strong>S.E.O Arama Motoru Optimizayonu</strong></h5>
+              <p class="card-text">Arama Motoru Optimizasyonu İle Web Sitenizi Herzaman Üst Sıralarda Tutun</p> 
+              <a href="" class="btn btn-outline-danger ">Daha Fazla...</a>          
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <a href=""><img src="/img/web-analytics.png" class="card-img-top p-3" alt="Google Ads"></a>
-        <div class="card-body">
-          <h5 class="card-title"><strong>Google Ads</strong></h5>
-          <p class="card-text">Detaylı Analizler ve Doğru Anahtar Kelimeler Tercihleri İle Verilen Google Reklamları Sonucunda Google'da En Üst Sırada Olun</p> 
-          <a href="" class="btn btn-outline-danger">Daha Fazla...</a>        
+        <div class="card col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500"style="width: 18rem;">
+            <a href=""><img src="/img/web-analytics.png" class="card-img-top p-3" alt="Google Ads"></a>
+          <div class="card-body">
+            <h5 class="card-title"><strong>Google Ads</strong></h5>
+            <p class="card-text">Detaylı Analizler ve Doğru Anahtar Kelimeler Tercihleri İle Verilen Google Reklamları Sonucunda Google'da En Üst Sırada Olun</p> 
+            <a href="" class="btn btn-outline-danger">Daha Fazla...</a>        
+          </div>
+        </div>   
+        <div class="card col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="2000"style="width: 18rem;">          
+            <a href=""><img src="/img/email.png" class="card-img-top p-3" alt="Kurumsal Mail Adresi"></a>
+            <div class="card-body">
+              <h5 class="card-title"><strong>Kurumsal Mail Adresi</strong></h5>
+              <p class="card-text">Kurumsal mail, işletmenizin ismini ve alan adını içerir. Bu, işletmenizin müşteriler ile iletişim kurarken daha profesyonel bir görünüm sergilemesini sağlar.</p>   
+              <a href="" class="btn btn-outline-danger">Daha Fazla...</a>       
+            </div>
+        </div>
+        <div class="card col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="2500"style="width: 18rem;">
+            <a href=""><img src="/img/www.png" class="card-img-top p-3" alt="Domain Almak"></a>
+            <div class="card-body">
+              <h5 class="card-title"><strong>Domain Almak</strong></h5>
+              <p class="card-text">Domain, bir web sitesinin adresini belirleyen, internette benzersiz bir kimlik numarasıdır. Örneğin, Google'ın alan adı "google.com" dur.</p> 
+              <a href="" class="btn btn-outline-danger ">Daha Fazla...</a>          
+            </div>
+        </div>
+        <div class="card col-md-6 col-lg-4" data-aos="fade-up"
+        data-aos-duration="3000" style="width: 18rem;">
+            <a href=""><img src="/img/startup.png" class="card-img-top p-3" alt="Hosting Almak"></a>
+          <div class="card-body">
+            <h5 class="card-title"><strong>Hosting Almak</strong></h5>
+            <p class="card-text">Hosting, bir web sitesinin internet üzerinde yayınlanması için gerekli olan hizmetleri sağlayan bir hizmettir.</p> 
+            <a href="" class="btn btn-outline-danger">Daha Fazla...</a>        
+          </div>
         </div>
       </div>
-      </div>
-
-      <div class="d-flex align-items-center justify-content-evenly mt-3">     
-        <div class="card" style="width: 18rem;">          
-          <a href=""><img src="/img/email.png" class="card-img-top p-3" alt="Kurumsal Mail Adresi"></a>
-          <div class="card-body">
-            <h5 class="card-title"><strong>Kurumsal Mail Adresi</strong></h5>
-            <p class="card-text">Kurumsal mail, işletmenizin ismini ve alan adını içerir. Bu, işletmenizin müşteriler ve iş ortakları ile iletişim kurarken daha profesyonel bir görünüm sergilemesini sağlar.</p>   
-            <a href="" class="btn btn-outline-danger">Daha Fazla...</a>       
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <a href=""><img src="/img/www.png" class="card-img-top p-3" alt="Domain Almak"></a>
-          <div class="card-body">
-            <h5 class="card-title"><strong>Domain Almak</strong></h5>
-            <p class="card-text">Domain, bir web sitesinin adresini belirleyen, internette benzersiz bir kimlik numarasıdır. Örneğin, Google'ın alan adı "google.com" dur.</p> 
-            <a href="" class="btn btn-outline-danger ">Daha Fazla...</a>          
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <a href=""><img src="/img/startup.png" class="card-img-top p-3" alt="Hosting Almak"></a>
-        <div class="card-body">
-          <h5 class="card-title"><strong>Hosting Almak</strong></h5>
-          <p class="card-text">Hosting, bir web sitesinin internet üzerinde yayınlanması için gerekli olan hizmetleri sağlayan bir hizmettir.</p> 
-          <a href="" class="btn btn-outline-danger">Daha Fazla...</a>        
-        </div>
-      </div>
-      </div>      
-    </div>    
+    </div>      
+        
   </main>
+
+  <section class="container-fluid mt-3">
+    <div class="section container">
+
+    </div>
+  </section>
+
   <button class="up border-0 fs-1 d-none"><i class="fa-solid fa-circle-arrow-up fa-bounce"></i></button>
 
 
 
   <footer>
     <div class="d-flex align-items-center justify-content-evenly footer">
-      <div class="text-white text-center ">
+      <div class="text-white text-center d-lg-block d-none ">
         <h2>AREM</h2>
         <h2>YAZILIM</h2>
       </div>
@@ -230,16 +239,16 @@
           <li><a href="contact.html"><i class="fa-solid fa-car-side"></i> Bize Ulaşın</a></li>
         </ul>
       </div>
-      <div>
-        <ul class="footer-link">
+      <div  class="footer-link">
+        <ul>
           <li><a href=""><img src="/img/html.png" width="30px" alt="Web Sitesi"> Kurumsal Web Site</a></li>
           <li><a href=""><img src="/img/www.png" width="30px" alt="Kurumsal Mail"> Kurumsal Mail</a></li>
-          <li><a href=""><img src="/img/seo.png" width="30px" alt="SEO"> S.E.O ARama Motoru Optimizasyonu</a></li>
+          <li><a href=""><img src="/img/seo.png" width="30px" alt="SEO"> S.E.O </a></li>
           <li><a href=""><img src="/img/domain.png" width="30px" alt="Domain ve Hosting"> Domain ve Hosting</a></li>
           <li><a href=""><img src="/img/pie-chart.png" width="30px" alt="Google Ads"> Google Ads</a></li>
         </ul>
       </div>
-      <div class="footer-phone">
+      <div class="footer-phone d-md-block d-none">
         <ul>
           <li><a href="#"><i class="fa-solid fa-at"></i> info@aremyazilim.com</a></li>
           <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
@@ -248,7 +257,18 @@
         </ul>
       </div>
     </div>
+    <div class="footer-phone2 d-block d-md-none">
+      <ul class="d-flex align-items-center justify-content-center">
+        <li><a href="#"><i class="fa-solid fa-at"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+        <li><a href="https://www.instagram.com/aremyazilim/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      </ul>
+    </div>    
   </footer>
+  <div class="arem">
+    @2023 Arem Yazılım. Tüm Hakları Saklıdır
+  </div>
 
 
   <script src="/js/bootstrap.bundle.min.js"></script>

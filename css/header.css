@@ -4,6 +4,7 @@
     background-position: center;
     background-size: cover;       
     height: 83vh;
+    background-attachment: fixed;
 }
 
 .nav-link{
@@ -44,6 +45,10 @@
     background-image: linear-gradient(to left ,rgba(0, 0, 255, 0.6), rgba(122, 13, 218, 0.6));
     color: white;
     
+}
+.social-links{
+    display: flex;
+    align-items: center;
 }
 .social-links li{
     list-style: none;

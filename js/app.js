@@ -27,7 +27,7 @@ function add(id){
 
 jQuery(document).ready(function() {
   
-    var btn = $('.up');
+    var btn = $('.up');   
  
     $(window).scroll(function() {
       if ($(window).scrollTop() > 100) {
@@ -35,12 +35,20 @@ jQuery(document).ready(function() {
       } else {
         btn.addClass("d-none");
       }
+    });    
+
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 10) {
+        document.querySelector("#services").classList.add("d-none")
+      }
     });
  
     btn.on('click', function(e) {
       e.preventDefault();
       $('html, body').animate({scrollTop:0}, '300');
     });
+
+    
  
   });
 

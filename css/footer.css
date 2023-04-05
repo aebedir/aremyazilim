@@ -1,6 +1,6 @@
 footer{
     background-image: linear-gradient(rgba(13, 13, 54, 0.7),rgba(13, 13, 54, 0.7)),url(../img/joshua-aragon-BMnhuwFYr7w-unsplash.jpg);
-    margin-top: 50px;
+    margin-top: 70px;
     background-position: center;
     padding: 50px 0px;
 }
@@ -16,6 +16,12 @@ footer{
 .footer a:hover{
     opacity: 0.7;
 }
+.footer-nav i{
+    padding-right: 5px;
+}
+.footer-nav a{
+    letter-spacing: 1.5px;
+}
 .footer{
     padding: 20px;
 }
@@ -26,4 +32,19 @@ footer{
     font-size: 25px;
     padding-top: 5px;
     padding-right: 10px;
+}
+.footer-phone2 li{
+    list-style: none; 
+    padding-right: 25px;   
+}
+.footer-phone2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.arem{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: white;
 }
