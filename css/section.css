@@ -1,8 +1,144 @@
-section{
+.gecis{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(/img/background2.jpg);
-    height: 500px;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;    
+    clip-path: polygon(0 0,100% 0, 100% 100%, 0 300px);    
+}
+.gecis2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(/img/christina-wocintechchat-com-faEfWCdOKIg-unsplash.jpg);
+    height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    margin-bottom: 50px;
+    clip-path: polygon(0 0,100% 200px, 100% 100%, 0 100%); 
+}
+.gecis2>div:first-child{
+    padding-top: 80px;
+}
+.gecis-img{
+    display: inline-block;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 50%;
+    outline: 7px solid #00288f;    
+}
+.gecis-img img{
+    width: auto;
+    height: 100%;
+    margin-left: -50%;
+}
+
+.gecis-content h5{
+    color:white;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+.gecis-content p{    
+    border-left: 5px solid #00288f;
+    color: white;
+    padding-left: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+}
+.gecis-content{
+    width: 30%;
+}
+
+
+
+
+
+
+/* Neler Yapıyoruz */
+.section{
+    width: 80%;
+    margin: auto;
+}
+.progress-title{      
+    width: fit-content;  
+    margin: auto;
+    padding: 7px 21px;
+    border: 1px solid black;
+    border-radius: 21px 35px 17px 55px;
+    transition: all .5s ease-in-out;
+}
+.progress-title:hover{
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+}
+.progress-title h2{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.progress-content p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.progress-content h5{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: white;
+    font-weight: bold;
+}
+
+.progress-content i{
+    border: 1px solid transparent;
+    border-radius: 15px 45px 19px 35px;
+    padding: 17px 33px;
+}
+.meeting, .work, .deadline{    
+    width: 50%;  
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+    padding: 20px;
+    border-radius: 50%;
+    transition: all .5s;
+    background-image: linear-gradient(to right ,#20dad8,#4c5fb6)
+}
+.meeting:hover i, .deadline:hover i,.work:hover i{
+    background-color: red;
+    transition: .5s; 
+    color: white;     
+}
+.meeting:hover, .work:hover,.deadline:hover{
+    transform: translate(10%);
+    background-image: linear-gradient(to left ,#20dad8,#4c5fb6)
+}
+.work{    
+    margin-left: 150px; 
+}
+
+
+
+/* Neden Biz */
+.why{
+    margin-top: 20px;
+}
+.why-img{
+    /* border: solid 1px black; */
+    border-radius: 50%;
+    padding: 15px;
+    margin-right: 15px;
+    background-color: #20dad7ae;
+    transition:all .5s ease-in-out;
+}
+.why-img img{
+    width: 70px;
+}
+.why-img:hover{
+    background-color: white;
+    outline: 4px solid #20dad8;
+    transform: rotate(1800deg);
+    -webkit-transform: rotate(1800deg);
+}
+
+.why h5,p{
+    margin: 0 !important;
 }

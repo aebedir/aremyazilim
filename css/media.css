@@ -11,10 +11,7 @@
 @media screen and (max-width: 992px) {
     #services{
         display: none !important;
-    }
-    .social-links{        
-        display: none !important;    
-    }
+    }    
     .background_content {
         width: 100% !important;
     }
@@ -40,52 +37,49 @@
     }
     .footer-phone i{
         font-size: 20px;       
-    }
+    }    
 }
 
 @media screen and (max-width:768px) {
     .title h1{
         font-size: 20px !important;
-    }
-    .card{
-        height: 350px !important;
-        width: 200px !important;  
-        padding-left: 3px !important;              
-        padding-right: 3px !important;
-    } 
+    }    
     .card-body{
         padding: 3px !important;
-        
-    }   
-    .card p{
-        height: 155px !important;        
-    }    
+    }  
     .card img{
         width: 100px !important;           
-    }   
+    }  
 }
 
 @media screen and (max-width:464px) {
     .title h1{
         font-size: 14px !important;
-    }
-    .card{
-        height: 200px !important;
-        width: 150px !important;  
-        padding-left: 3px !important;              
-        padding-right: 3px !important;
-    } 
-    .card-body{
-        padding: 0px !important;
-        
-    }   
-    .card p{
-        height: 30px !important; 
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;             
     }    
+    .card-body{
+        padding: 2px !important;
+    }  
     .card img{
         width: 80px !important;           
-    }   
+    }  
+    .card {
+        width: 250px !important;
+    }
+    .wrapper .icon {        
+        padding: 0px !important;        
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .wrapper {   
+        right: 0px !important;
+    }
+    .footer{
+        padding: 0 !important;
+    }
+    .footer-phone2 ul{
+        padding: 0 !important;
+    }
+    .up{
+        right: 15px !important;
+    }
 }

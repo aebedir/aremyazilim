@@ -1,3 +1,9 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .background_img{
     background-image: linear-gradient(rgba(13, 13, 54, 0.7),rgba(13, 13, 54, 0.7)),url(../img/dmitry-mashkin-DY3Nt1MrOrw-unsplash.jpg);
     background-repeat: no-repeat;
@@ -39,39 +45,22 @@
     padding: 13px 17px;
     border-radius: 20px;   
     border: none; 
-    transition: .5s !important;
+    transition:all .5s ease-in-out !important;
 }
-.getPrice:hover{
-    background-image: linear-gradient(to left ,rgba(0, 0, 255, 0.6), rgba(122, 13, 218, 0.6));
+.getPrice:hover {
+    background-image: linear-gradient(to left ,rgba(0, 0, 255, 0.6), rgba(122, 13, 218, 0.9));
     color: white;
-    
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
 }
-.social-links{
-    display: flex;
-    align-items: center;
-}
-.social-links li{
+.contact-link li{
     list-style: none;
-    display: inline-block;
-    padding-left: 25px;    
 }
-.social-links a{
-    color: black;
-    font-size: 25px;
+.contact-link a{
+    text-decoration: none;
+    color: black;    
 }
-.social-links li:hover{
-    transform: scale(1.1) !important;
-}
-.email{
-    border: solid 1px black;
-    color: white;
-    font-weight: bold;
-    background-color:rgba(255, 0, 0, 0.7);
-    position: absolute;
-    right: 0;    
-    padding: 7px 13px;
-    border-radius: 15px;
-}
+
 #services{
     border-top: 1px dotted rgba(0, 0, 0, 0.1);     
     background-color: white;  
@@ -121,14 +110,132 @@
     right: 10%;
 }
 .up{
-    position: sticky;  
-    bottom: 10px;  
+    position: fixed;  
+    bottom: 30px;  
+    right: 50px;
     padding-right: 30px;
     float: right;
     background-color: transparent;
+    color: #1DA1F2;
+    z-index: 501;
 }
 
 
+/* Social Media İcons */
+*:focus,
+*:active {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
 
+.wrapper {    
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    list-style: none;
+    display: flex;
+    float: right;
+    flex-direction: column;
+    z-index: 500;
+}
+.icon a{
+    color: black;
+}
+.wrapper .icon {
+    opacity: 0.7;
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .whatsapp:hover,
+.wrapper .whatsapp:hover .tooltip,
+.wrapper .whatsapp:hover .tooltip::before {
+    opacity: 1;
+    background: #25D366;
+    color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+    opacity: 1;
+    background: #1DA1F2;
+    color: #ffffff ;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    opacity: 1;
+    background: #E4405F;
+    color: #ffffff;
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+    opacity: 1;
+    background: #1666C5;
+    color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+    opacity: 1;
+    background: #CD201F;
+    color: #ffffff;
+}
 
 

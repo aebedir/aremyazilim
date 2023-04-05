@@ -19,12 +19,16 @@ $("#1").mouseenter(function(){
     document.querySelector("#services").classList.add("d-none")
 });
 
+
+// Active Class
 function add(id){
     let active = document.getElementsByClassName("active")
     active[0].classList.remove("active");
     document.getElementById(id).classList.add("active")
 }
 
+
+// Scroll İşlemleri
 jQuery(document).ready(function() {
   
     var btn = $('.up');   
@@ -47,11 +51,9 @@ jQuery(document).ready(function() {
       e.preventDefault();
       $('html, body').animate({scrollTop:0}, '300');
     });
-
-    
- 
   });
 
+  
 
 
 

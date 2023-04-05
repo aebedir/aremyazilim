@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/footer.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Montserrat+Alternates&family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
     <title>Document</title>
 </head>
@@ -45,30 +45,23 @@
               <a class="nav-link" id="4"  href="contact.html" onClick="add(this.id)" >Bize Ulaşın</a>
             </li>            
           </ul>
-          
-          <div class="social-links">
-            <li class="social-link"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            <li class="social-link"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-            <li class="social-link"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-            <div onmouseover="show()" onmouseout="not()">
-              <li class="social-link"><a href=""><i class="fa-brands fa-at"></i></a></li>
-              <p data-aos="flip-right" class="email d-none" >info@aremyazilim.com</p>
-            </div>                                   
-          </div>
-        </div>
+          <ul class="contact-link"> 
+            <li class="pb-2"><a href="#"><i class="fa-solid fa-at fs-5"></i> info@aremyazilim.com</a></li>
+            <li class="pt-2"><a href="#"><i class="fa-solid fa-phone fs-5"></i> 0850 850 ** **</a></li>          
+          </ul>      
 
         <div>
 
         </div>
       </div>
     </nav>
-    <!-- Navigation Bar -->
+    
 
 
     <!-- Background and Content Area -->
     <div class="background_img">
 
-      <!-- Dropdown Area -->
+      <!-- Dropdown Area Hizmetlerimiz -->
       <div class="d-none " id="services">
         <div class="services-item">        
           <div class="logo">
@@ -99,8 +92,35 @@
           </div>
         </div> 
       </div>
-      <!-- Dropdown Area -->
+      
+      <!-- Sosyal Linkler -->
+      <div class="social-links">
+        <ul class="wrapper">
+        <li class="icon whatsapp">
+          <span class="tooltip">WhatsApp</span>
+          <span><a href="#"><i class="fab fa-whatsapp"></i></a></span>
+        </li>
+        <li class="icon twitter">
+          <span class="tooltip">Twitter</span>
+          <span><a href=""><i class="fab fa-twitter"></i></a></span>
+        </li>
+        <li class="icon instagram">
+          <span class="tooltip">Instagram</span>
+          <span><a href=""><i class="fab fa-instagram"></i></a></span>
+        </li>
+        <li class="icon linkedin">
+          <span class="tooltip">LinkedIn</span>
+          <span><a href=""><i class="fab fa-linkedin"></i></a></span>
+        </li>
+        <li class="icon youtube">
+          <span class="tooltip">Youtube</span>
+          <span><a href=""><i class="fab fa-youtube"></i></a></span>
+        </li>
+       </ul>
+      </div>
 
+
+      <!-- Ekrandaki Kayar Yazılar -->
       <div class="d-flex align-items-center">  
         <div class="background_content ps-4">              
         <h2 data-aos="fade-left" 
@@ -133,7 +153,7 @@
          Yaptırın!</h2>
 
         <div data-aos="fade-left"  
-        data-aos-delay="2500" class="text-white ps-2 mt-3">
+        data-aos-delay="2500" class="text-white price ps-2 mt-3">
           <h5>2.500 TL'den Başlayan Fiyatlarla</h5>
         </div>  
         <div data-aos="fade-left"  
@@ -141,7 +161,12 @@
           <button class="btn getPrice">Fiyat Teklifi Al</button>
         </div> 
         </div>
-        <div class="background_gif d-none d-lg-block">
+
+        <!-- Ana ekran sol taraf resim -->
+        <div data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-delay="2500"
+        data-aos-duration="1000" class="background_gif d-none d-lg-block">
           <img src="/img/pngwing.com.png" width="400px" alt="">
         </div>             
       </div>
@@ -152,81 +177,230 @@
   </header>    
   
 
+
+  <!-- Main Card Yapısı -->
   <main class="mt-3 container position-relative">
     <div class="title">      
       <h1>İnternet Dünyasında Yükselin: Tüm Cihazlara Uygun Responsive Tasarım ve SEO Uyumlu  Web Siteniz ile Dijital Varlığınızı Arttırın </h1>
     </div> 
 
-    <div class="container mt-3 "> 
-      <div class="row gap-4 d-flex justify-content-evenly">
-        <div class="card col-md-6 col-lg-4" data-aos="fade-up"
-        data-aos-duration="500" style="width: 18rem;">
+    <div class="container mt-3 card-div "> 
+      <div>
+        <div data-aos="fade-right" data-aos-delay="1000" class="card" style="width: 18rem;">
             <button class="btn btn-success btn-sm">SEO Hediyeli</button>
             <a href=""><img src="/img/html.png" class="card-img-top p-3" alt="Kurumsal Web Sitesi"></a>
             <div class="card-body">
               <h5 class="card-title"><strong>Kurumsal Web Sitesi</strong></h5>
-              <p class="card-text">Anahtar Teslim Web Sitenizi Bize Yaptırın Kurumsal Web Adresi İle Şirketinizi Daha Çok Müşteriye Ulaştırın</p>   
+              <p class="card-text">Anahtar Teslim Kurumsal Web Siteniz İle Şirketinizi Daha Çok Müşteriye Ulaştırın</p>   
               <a href="" class="btn btn-outline-danger">Daha Fazla...</a>       
             </div>
         </div>
-        <div class="card col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000"style="width: 18rem;">
-            <a href=""><img src="/img/seo2.png" class="card-img-top p-3" alt="S.E.O Arama Motoru Optimizayonu"></a>
-            <div class="card-body">
-              <h5 class="card-title"><strong>S.E.O Arama Motoru Optimizayonu</strong></h5>
-              <p class="card-text">Arama Motoru Optimizasyonu İle Web Sitenizi Herzaman Üst Sıralarda Tutun</p> 
-              <a href="" class="btn btn-outline-danger ">Daha Fazla...</a>          
-            </div>
-        </div>
-        <div class="card col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500"style="width: 18rem;">
-            <a href=""><img src="/img/web-analytics.png" class="card-img-top p-3" alt="Google Ads"></a>
+        <div data-aos="fade-right" data-aos-delay ="500"  class="card mt-3" style="width: 18rem;">
+          <a href=""><img src="/img/seo2.png" class="card-img-top p-3" alt="S.E.O Arama Motoru Optimizayonu"></a>
           <div class="card-body">
-            <h5 class="card-title"><strong>Google Ads</strong></h5>
-            <p class="card-text">Detaylı Analizler ve Doğru Anahtar Kelimeler Tercihleri İle Verilen Google Reklamları Sonucunda Google'da En Üst Sırada Olun</p> 
-            <a href="" class="btn btn-outline-danger">Daha Fazla...</a>        
-          </div>
-        </div>   
-        <div class="card col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="2000"style="width: 18rem;">          
-            <a href=""><img src="/img/email.png" class="card-img-top p-3" alt="Kurumsal Mail Adresi"></a>
-            <div class="card-body">
-              <h5 class="card-title"><strong>Kurumsal Mail Adresi</strong></h5>
-              <p class="card-text">Kurumsal mail, işletmenizin ismini ve alan adını içerir. Bu, işletmenizin müşteriler ile iletişim kurarken daha profesyonel bir görünüm sergilemesini sağlar.</p>   
-              <a href="" class="btn btn-outline-danger">Daha Fazla...</a>       
-            </div>
-        </div>
-        <div class="card col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="2500"style="width: 18rem;">
-            <a href=""><img src="/img/www.png" class="card-img-top p-3" alt="Domain Almak"></a>
-            <div class="card-body">
-              <h5 class="card-title"><strong>Domain Almak</strong></h5>
-              <p class="card-text">Domain, bir web sitesinin adresini belirleyen, internette benzersiz bir kimlik numarasıdır. Örneğin, Google'ın alan adı "google.com" dur.</p> 
-              <a href="" class="btn btn-outline-danger ">Daha Fazla...</a>          
-            </div>
-        </div>
-        <div class="card col-md-6 col-lg-4" data-aos="fade-up"
-        data-aos-duration="3000" style="width: 18rem;">
-            <a href=""><img src="/img/startup.png" class="card-img-top p-3" alt="Hosting Almak"></a>
-          <div class="card-body">
-            <h5 class="card-title"><strong>Hosting Almak</strong></h5>
-            <p class="card-text">Hosting, bir web sitesinin internet üzerinde yayınlanması için gerekli olan hizmetleri sağlayan bir hizmettir.</p> 
-            <a href="" class="btn btn-outline-danger">Daha Fazla...</a>        
+            <h5 class="card-title"><strong>S.E.O</strong></h5>
+            <p class="card-text">Arama Motoru Optimizasyonu İle Web Sitenizi Herzaman Üst Sıralarda Tutun</p> 
+            <a href="" class="btn btn-outline-danger ">Daha Fazla...</a>          
           </div>
         </div>
       </div>
+
+      <div>
+        <div data-aos="flip-right" data-aos-delay ="1500" class="card" style="width: 18rem;">
+          <a  href=""><img src="/img/web-analytics.png" class="card-img-top p-3" alt="Google Ads"></a>
+        <div class="card-body">
+          <h5 class="card-title"><strong>Google Ads</strong></h5>
+          <p class="card-text">Detaylı Analizler ve Doğru Anahtar Kelimeler Tercihleri İle Verilen Google Reklamları Sonucunda Rakiplerinizi Geçerek Google'da En Üst Sırada Olun</p> 
+          <a href="" class="btn btn-outline-danger">Daha Fazla...</a>        
+        </div>
+        </div>   
+        <div data-aos="flip-right" data-aos-delay ="1500" class="card mt-3" style="width: 18rem;">          
+          <a href=""><img src="/img/email.png" class="card-img-top p-3" alt="Kurumsal Mail Adresi"></a>
+          <div class="card-body">
+            <h5 class="card-title"><strong>Kurumsal Mail Adresi</strong></h5>
+            <p class="card-text">Kurumsal mail, işletmenizin ismini ve alan adını içerir. Bu, işletmenizin müşteriler ve İş Ortaklarınız İle iletişim kurarken daha profesyonel bir görünüm sergilemesini sağlar.</p>   
+            <a href="" class="btn btn-outline-danger">Daha Fazla...</a>       
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div data-aos="fade-left" data-aos-delay ="2500" class="card" style="width: 18rem;">
+          <a href=""><img src="/img/www.png" class="card-img-top p-3" alt="Domain Almak"></a>
+          <div class="card-body">
+            <h5 class="card-title"><strong>Domain Almak</strong></h5>
+            <p class="card-text">Domain, bir web sitesinin adresini belirleyen, internette benzersiz bir kimlik numarasıdır.</p> 
+            <a href="" class="btn btn-outline-danger ">Daha Fazla...</a>          
+          </div>
+        </div>   
+        <div data-aos="fade-left" data-aos-delay ="2500" class="card mt-3" style="width: 18rem;">
+          <a href=""><img src="/img/startup.png" class="card-img-top p-3" alt="Hosting Almak"></a>
+        <div class="card-body">
+          <h5 class="card-title"><strong>Hosting Almak</strong></h5>
+          <p class="card-text">Hosting, bir web sitesinin internet üzerinde yayınlanması için gerekli olan hizmetleri sağlayan bir hizmettir.</p> 
+          <a href="" class="btn btn-outline-danger">Daha Fazla...</a>        
+        </div>
+        </div>
+      </div>           
+        
     </div>      
         
   </main>
 
-  <section class="container-fluid mt-3">
-    <div class="section container">
 
+  <!-- Birinci Geçiş Resmi -->
+  <section class="gecis mt-5">
+    <div class="d-flex align-items-center justify-content-evenly pt-3">
+      <div data-aos="fade-up-right" data-aos-delay="100"  class="gecis-content">
+        <h5 class="text-end">AREM YAZILIM</h5>
+        <p>"Arem Yazılım olarak her zaman sektörün en iyisi olmak için uğraşıyoruz. Bu yüzden en çok tercih edilen firmayız! Bugün, Arem Yazılım teknolojik yenilikleri ve gelişmeleri yakından takip etmektedir. Böylece kendimizi ve bilgilerimizi sürekli olarak geliştirmekteyiz."</p>
+      </div>
+  
+      <div data-aos="fade-up-left" data-aos-delay="400"  class="gecis-img">
+        <img src="/img/myriam-jessier-eveI7MOcSmw-unsplash.jpg"  alt="">
+      </div>
+    </div>
+    
+  </section>
+
+
+  <!-- Neler Yapıyoruz -->
+  <section class="section">
+
+    <div class="progress-title">      
+      <h2>Neler Yapıyoruz...<i class="fa-solid fa-question fa-bounce"></i></h2>
+    </div>
+    
+    <div class="d-flex align-items-center">
+
+      <div class="progress-content">
+        <div class="meeting ">
+          <div class="text-center">
+            <i class="fa-solid fa-handshake fs-1"></i>
+            <h5>Hadi Toplantı Yapalım...</h5>
+          </div>        
+            <p>Yüz Yüze veya Online Olarak Yapacağımız Görüşmeler ile  Web Sitesi Genel Planını Belirliyoruz.</p>
+        </div>   
+        
+        <div class="work">
+          <div class="text-center">
+            <i class="fa-solid fa-laptop-file fs-1"></i>
+            <h5>Biraz Çalışalım Artık...</h5>
+          </div>
+          <p>Sizden Almış Olduğumuz Bilgiler Doğrultusunda Web Sitenizin Çalışmalarına Başlıyoruz..</p>
+        </div>
+
+        <div class="deadline">
+          <div class="text-center">
+            <i class="fa-solid fa-briefcase fs-1"></i>
+            <h5>Şimdi Sunum Zamanı...</h5>
+          </div>        
+            <p>Web Sitemiz Sizlere Sunuma ve Yayına Hazırdır.</p>
+        </div>
+
+
+      </div>
+        
+      <div>
+        <img src="/img/kisspng-meeting-flat-design-brainstorming-business-vector-meeting-5a96927c9ae158.4961807615198173406344.png" alt="Toplantı" width="500px">
+      </div>
     </div>
   </section>
 
+
+  <!-- İkinci Geçiş Resmi -->
+  <section class="gecis2 ">
+    <div class="d-flex align-items-center justify-content-evenly ">
+
+      <div data-aos="fade-up-right" data-aos-delay="100"  class="gecis-img">
+        <img src="/img/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg"  alt="">
+      </div>
+
+      <div data-aos="fade-up-left" data-aos-delay="400"  class="gecis-content">
+        <h5>AREM YAZILIM</h5>
+        <p>"Arem Yazılım olarak her zaman sektörün en iyisi olmak için uğraşıyoruz. Bu yüzden en çok tercih edilen firmayız! Bugün, Arem Yazılım teknolojik yenilikleri ve gelişmeleri yakından takip etmektedir. Böylece kendimizi ve bilgilerimizi sürekli olarak geliştirmekteyiz."</p>
+      </div> 
+      
+    </div>
+  </section>
+
+
+
+  <!-- Neden Biz -->
+  <section class="section">
+    <div class="progress-title">      
+      <h2>Neden Biz <i class="fa-solid fa-question fa-bounce"></i></h2>
+    </div>
+    <div class="container why">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center mt-5">
+          <div class="why-img">
+            <img src="/img/fast-delivery.png" alt="">
+          </div>
+          <div>
+            <h5>Hız ve Kalite</h5>
+            <p>Hızlı ve zamanında iş teslimi.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center mt-5">
+          <div class="why-img">
+            <img src="/img/rating.png" alt="">
+          </div>
+          <div>
+            <h5>Deneyim</h5>
+            <p>Uzun Yıllar Sektör Deneyimi</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center mt-5">
+          <div class="why-img">
+            <img src="/img/trust.png" alt="">
+          </div>
+          <div>
+            <h5>Güven</h5>
+            <p>Müşterilerimiz Arem Yazılıma Güveniyor.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center mt-5">
+          <div class="why-img">
+            <img src="/img/consistency.png" alt="">
+          </div>
+          <div>
+            <h5>Tutarlılık</h5>
+            <p>Arem Yazılımın önerdiği hizmet sizin için çözümdür.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center mt-5">
+          <div class="why-img">
+            <img src="/img/integrity.png" alt="">
+          </div>
+          <div>
+            <h5>Bütünlük</h5>
+            <p>Arem Yazılım bütün isteklerinizin tamamının çözüm merkezidir.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center mt-5">
+          <div class="why-img">
+            <img src="/img/checking.png" width="70px" alt="">
+          </div>
+          <div>
+            <h5>Doğruluk</h5>
+            <p>Google dostu Seo uyumlu siteler.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </section>
+
+
+  <!-- Yukarı Çık Butonu -->
   <button class="up border-0 fs-1 d-none"><i class="fa-solid fa-circle-arrow-up fa-bounce"></i></button>
 
 
 
   <footer>
-    <div class="d-flex align-items-center justify-content-evenly footer">
+    <div class="d-flex align-items-center justify-content-lg-evenly footer">
       <div class="text-white text-center d-lg-block d-none ">
         <h2>AREM</h2>
         <h2>YAZILIM</h2>
@@ -251,18 +425,14 @@
       <div class="footer-phone d-md-block d-none">
         <ul>
           <li><a href="#"><i class="fa-solid fa-at"></i> info@aremyazilim.com</a></li>
-          <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
-          <li><a href="https://www.instagram.com/aremyazilim/" target="_blank"><i class="fa-brands fa-instagram"></i> instagram.com/aremyazilim</a></li>
-          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-phone"></i> 0850 850 ** **</a></li>          
         </ul>
       </div>
     </div>
     <div class="footer-phone2 d-block d-md-none">
       <ul class="d-flex align-items-center justify-content-center">
-        <li><a href="#"><i class="fa-solid fa-at"></i></a></li>
-        <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
-        <li><a href="https://www.instagram.com/aremyazilim/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-at"></i> info@aremyazilim.com</a></li>
+        <li><a href="#"><i class="fa-solid fa-phone"></i> 0850 850 ** **</a></li>        
       </ul>
     </div>    
   </footer>
